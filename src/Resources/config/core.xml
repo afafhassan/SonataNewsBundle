@@ -7,7 +7,7 @@
         </service>
         <service id="sonata.news.permalink.collection" class="Sonata\NewsBundle\Permalink\CollectionPermalink"/>
         <!-- email security token -->
-        <service id="sonata.news.hash.generator" class="Sonata\NewsBundle\Util\HashGenerator">
+        <service id="sonata.news.hash.generator" class="Sonata\NewsBundle\Util\HashGenerator" public="true">
             <argument/>
         </service>
         <service id="sonata.news.mailer" class="Sonata\NewsBundle\Mailer\Mailer" public="true">

@@ -86,7 +86,8 @@ class SonataNewsExtension extends Extension
             $config['link'],
             $config['description'],
             new Reference('sonata.news.permalink.generator'),
-        ]));
+            ]))
+            ->setPublic(true);
 
         $container->getDefinition('sonata.news.hash.generator')
             ->replaceArgument(0, $config['salt']);
